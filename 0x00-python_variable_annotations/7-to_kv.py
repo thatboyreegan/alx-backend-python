@@ -4,4 +4,4 @@
 
 def to_kv(k: str, v: int | float) -> tuple[str, float]:
     """takes a string of int/float as arguments and returns a tuple"""
-    return (k, v * v)
+    return (k, v **2)

@@ -3,5 +3,14 @@
 
 
 def sum_mixed_list(mxd_lst: list[float | int]) -> float:
-    """takes a list and returns sum of elements as float"""
-    return sum(mxd_lst)
+    """takes a list and returns sum of elements as float
+
+    Args:
+        input_list (list[float | int]) - list of floats and integers
+
+    Return:
+        Float: sum of the arguments"""
+    sum: float = 0
+    for item in mxd_lst:
+        sum += item
+    return sum
